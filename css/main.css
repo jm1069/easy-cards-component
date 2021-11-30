@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /* outline: 1px solid red; */
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Headings here */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Creates Space between Elements (change value to create more or less space*/
+.spacer {
+    height: 20px;
+}
+
+/* Credits on Bottom of Page (can be deleted) */
+.credits {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    padding-bottom: 40px;
+}
+
+/* Accordion Styling */
+
+/* Container of all Cards as a grid */
+/* starting point is center but next row beginns from left */
+.easy-card-wrapper {
+    display: grid;
+    justify-content: center;
+    padding: 0 4rem;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, 25rem);
+}
+
+/* styling the card */
+.easy-card {
+    padding: 20px;
+    background-color: #e9e9e9;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.easy-card-content {
+    /* extra content styling goes here */
+}
+
+/* Media Queries - Responsive Design */
+@media (max-width: 768px) {
+    .easy-card-wrapper{
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, 20rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .easy-card-wrapper{
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
+}
+
+@media (max-width: 320px) {
+    .easy-card{
+        border: none;
+        border-radius: 0;
+    }
+}
