@@ -1,4 +1,4 @@
-# Easy Cards 1.0 🗃 by JM1069
+# Easy Cards 1.0 🃏 by JM1069
 
 customizable and responsive cards in a grid made with html&amp;css that can be used on your website! 
 
